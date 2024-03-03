@@ -13,4 +13,5 @@ mariadb:
     username: bn_wordpress
     password: password
 
+wordpressUsername: admin
 wordpressPassword: password

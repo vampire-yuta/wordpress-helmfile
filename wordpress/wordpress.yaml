@@ -1,0 +1,16 @@
+ingress:
+  enabled: true
+  pathType: ImplementationSpecific
+  ingressclassName: nginx
+  hostname: wordpress-sample.vamdemic.local
+  path: /
+  # https://artifacthub.io/packages/helm/bitnami/wordpress?modal=values&path=ingress.enabled
+
+mariadb:
+ auth:
+    rootPassword: password
+    database: bitnami_wordpress
+    username: bn_wordpress
+    password: password
+
+wordpressPassword: password

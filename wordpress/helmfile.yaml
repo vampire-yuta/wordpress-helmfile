@@ -1,9 +1,7 @@
 releases:
   - name: wordpress
     namespace: wordpress
-    # chart: prometheus-community/prometheus
-    # https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus
     chart: bitnami/wordpress
      # https://github.com/bitnami/charts/tree/main/bitnami/wordpress/#installing-the-chart
-    #values:
-    #  - ./wordpress.yaml
+    values:
+      - ./wordpress.yaml

@@ -1,0 +1,20 @@
+version: '3'
+
+tasks:
+  greet:
+    cmds:
+      - echo $GREETING
+    env:
+      GREETING: Hey, there!
+  setup:
+    cmds:
+      - helm repo add bitnami https://charts.bitnami.com/bitnami
+      - helm repo update
+
+  apply:
+    cmds:
+      - helmfile apply
+
+  destroy:
+    cmds:
+      - helmfile destroy

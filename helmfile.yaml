@@ -1,0 +1,2 @@
+helmfiles:
+  - ./wordpress/helmfile.yaml
